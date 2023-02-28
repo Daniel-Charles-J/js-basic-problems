@@ -55,6 +55,17 @@ function key_value_pairs(obj)
     if (Object.keys) return Object.keys(obj);
   }
 
-console.log(key_value_pairs({red: "#FF0000", green: "#00FF00", white: "#FFFFFF"}));
+//console.log(key_value_pairs({red: "#FF0000", green: "#00FF00", white: "#FFFFFF"}));
+
+
+//From obj to array
+const object1 = {
+    a: 'banana',
+    b: 42
+  };
+  
+  for (const [key, value] of Object.entries(object1)) {
+    console.log(`${key}: ${value}`);
+  }
 
 
