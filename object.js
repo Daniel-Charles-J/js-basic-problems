@@ -67,5 +67,15 @@ const object1 = {
   for (const [key, value] of Object.entries(object1)) {
     console.log(`${key}: ${value}`);
   }
+//First letter should be the capital
+let string = "I am the king of the jungle but the jungle was not mine, but i will rule, king";
+let arr = string.split(" ");
+console.log(arr);
+
+for(let i=0; i<arr.length; i++){
+    arr[i] = arr[i].charAt(0).toUpperCase()+arr[i].slice(1);
+}
+const x = arr.join(" ");
+console.log(x);
 
 
